@@ -1,5 +1,6 @@
 import "./register.css"
-import Submitbutton from "../button/submittbutton";
+// import Submitbutton from "../button/submittbutton";
+import Submitbutton from "../Generic components/button/Submittbutton";
 import Email from "../email/Email";
 import Password from "../password/Password";
 import FirstName from "../names/FirstName";

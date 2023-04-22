@@ -1,6 +1,8 @@
-import React from "react";
-import Input from "../Input/Input";
-import InputDropdownR from "../Input/InputDropdownR";
+//import React from "react";
+//import Input from "../Input/Input";
+import Input from "../Generic components/Input/Input";
+//import InputDropdownR from "../Input/InputDropdownR";
+import InputDropdownR from "../Generic components/Input/InputDropdownR";
 import Heading from "../Generic components/Heading/Heading";
 import Submitbutton from "../Generic components/button/Submittbutton";
 
@@ -21,4 +23,4 @@ const Angebot = () => {
     )
   }
 
-  export default Angebot
+  export default Angebot;

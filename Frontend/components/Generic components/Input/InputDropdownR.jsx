@@ -17,4 +17,4 @@ const InputDropdownR = ({name, dropDownTitle, dropDown1, dropDown2, dropDown3}) 
     )
   }
   
-  export default InputDropdownR
+  export default InputDropdownR;
