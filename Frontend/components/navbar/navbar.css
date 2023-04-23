@@ -1,0 +1,24 @@
+.header {
+    text-align: center;
+}
+
+.firstLine {
+    text-align: center;
+}
+
+.secondLine{
+    display: flex;
+    gap:10px;
+}
+
+.textDecoration {
+    text-decoration: none;
+    color: white;
+}
+
+.textDecoration:hover {
+    color: rgb(73, 190, 18);
+}
+
+
+

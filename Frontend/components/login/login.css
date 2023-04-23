@@ -7,12 +7,17 @@
     display: flex;
     justify-content: center;
     color: white;
+    
 }
 
 .login-container > form{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.link{
+    text-align: center;
 }
 
 
