@@ -1,9 +1,9 @@
-import React from "react";
+import "./heading.css"
 
-const Heading = ({title, className}) => {
+const Heading = ({title}) => {
 
     return (
-        <h1 className={className}>{title}</h1> 
+        <h1 >{title}</h1> 
     );
 }
 

@@ -1,3 +1,7 @@
-#inputPassword2::placeholder{
-    color: black;
+#emailInput{
+    width: 20vw;
+}
+
+.form-label{
+    color: white;
 }

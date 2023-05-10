@@ -1,5 +1,5 @@
 .login-container{
-    height: 50vh;
+    height: 65vh;
     width: 30vw;
     top: 27%;
     background-color: rgb(116, 149, 209);
@@ -12,8 +12,10 @@
 
 .login-container > form{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 45px;
 }
 
 .link{

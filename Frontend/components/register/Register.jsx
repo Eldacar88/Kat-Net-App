@@ -1,32 +1,31 @@
 import "./register.css"
-// import Submitbutton from "../button/submittbutton";
-import Submitbutton from "../Generic components/button/Submittbutton";
+
+import LastName from "../names/LastName";
+import FirstName from "../names/First";
 import Email from "../email/Email";
 import Password from "../password/Password";
-import FirstName from "../names/FirstName";
-import LastName from "../names/LastName";
+import Submitbutton from "../Generic components/button/Submittbutton";
+import { Link } from "react-router-dom";
 
-const Register = ({firstNameLabel, firstNamePlaceholder, lastNameLabel, lastNamePlaceholder, emailLabel, emailPlaceholder, passwordLabel, passwordPlaceholder, submitButtonText}) => {
-
+const Register = ({firstNameLabel, firstNamePlaceholder, lastNameLabel, lastNamePlaceholder, emailLabel, emailPlaceholder, passwordLabel, passwordPlaceholder, submitButtonText, backToLoginText}) => {
     return(
         <div className="register-container">
-             <form class="row g-3 needs-validation" novalidate>
+            <form>
+                <h1>Register</h1>
+                <div className="subcontainer">
+                    <FirstName firstNameLabel={firstNameLabel} firstNamePlaceholder={firstNamePlaceholder}/>
+                    <LastName lastNameLabel={lastNameLabel} lastNamePlaceholder={lastNamePlaceholder}/>
+                </div>
                 
-                <FirstName firstNameLabel={firstNameLabel} firstNamePlaceholder={firstNamePlaceholder}/>
-
-                <LastName lastNameLabel={lastNameLabel} lastNamePlaceholder={lastNamePlaceholder}/>
-
                 <Email emailLabel={emailLabel} emailPlaceholder={emailPlaceholder}/>
-
                 <Password passwordLabel={passwordLabel} passwordPlaceholder={passwordPlaceholder}/>
-
-                <Submitbutton submitButtonText={submitButtonText}/>
+                <Link to={"/Login"}><Submitbutton submitButtonText={backToLoginText}/></Link>
+                <Link to={"/Profile"}><Submitbutton submitButtonText={submitButtonText}/></Link>
                 
-              </form>
-            
+            </form>
         </div>
+        
     )
-
 }
 
 export default Register;

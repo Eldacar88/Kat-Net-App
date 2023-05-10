@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^8.0.1"
+    "concurrently": "^8.0.1",
+    "uuid4": "^2.0.3",
+    "uuidv4": "^6.2.13"
   }
 }

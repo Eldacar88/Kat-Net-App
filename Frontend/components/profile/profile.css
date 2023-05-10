@@ -1,0 +1,33 @@
+.profilecontainer{
+    padding: 20px;
+    background-color: rgb(116, 149, 209);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.equipementcontainer{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.areacontainer{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.areacontainer > label{
+    color: black;
+}

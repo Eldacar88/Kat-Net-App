@@ -1,0 +1,25 @@
+.homecontainer{
+    width: 100vw;
+    
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navbarcontainer{
+    background-color: rgb(116, 149, 209);
+    width: 100vw;
+    display: flex;
+}
+
+#navbaritem{
+    color: white;
+}
+
+#navbarSupportedContent{
+    position: relative;
+    left: 155%;
+}
+
+

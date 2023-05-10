@@ -2,18 +2,18 @@ import React from 'react'
 
 
 
-const InputDropdownR = ({name, dropDownTitle, dropDown1, dropDown2, dropDown3}) => {
+const InputDropdownR = ({inputDropdownLabel, selectionDefault, selectionOne, selectionTwo, selectionThree}) => {
 
     return (
-      <div className="input-group mb-3">
-        <span className="input-group-text" id="inputGroup-sizing-default">{name}</span>
-  <button className="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">{dropDownTitle}</button>
-  <ul className="dropdown-menu dropdown-menu-end">
-    <li><a className="dropdown-item" href="#">{dropDown1}</a></li>
-    <li><a className="dropdown-item" href="#">{dropDown2}</a></li>
-    <li><a className="dropdown-item" href="#">{dropDown3}</a></li>
-  </ul>
-</div>
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">{inputDropdownLabel}</label>
+        <select class="form-select" id="inputGroupSelect01">
+          <option selected>{selectionDefault}</option>
+          <option value="1">{selectionOne}</option>
+          <option value="2">{selectionTwo}</option>
+          <option value="3">{selectionThree}</option>
+        </select>
+      </div>
     )
   }
   

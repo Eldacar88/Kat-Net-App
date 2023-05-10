@@ -1,9 +1,5 @@
-.sub-container1{
-    display: flex;
-}
-
 .register-container{
-    height: 60vh;
+    height: 75vh;
     width: 30vw;
     top: 27%;
     background-color: rgb(116, 149, 209);
@@ -11,30 +7,18 @@
     display: flex;
     justify-content: center;
     color: white;
+    
 }
 
 .register-container > form{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 45px;
 }
 
-
-.form-control{
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 30px;   
-}
-
-
-#exampleFormControlInput1{
-    width: 20vw;
-}
-
-#inputPassword2{
-    width: 20vw;
-}
-
-#validationTooltip01::placeholder,  #validationTooltip02::placeholder, #exampleFormControlInput1::placeholder, #inputPassword2::placeholder{
-    color: white;
+.subcontainer {
+    display: flex;
+    gap: 20px;
 }

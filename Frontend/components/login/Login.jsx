@@ -1,29 +1,27 @@
 import "./login.css"
 //import Submitbutton from "../button/submittbutton";
 import Submitbutton from "../Generic components/button/Submittbutton";
-import { Link } from "react-router-dom";
 import Email from "../email/Email";
 import Password from "../password/Password";
+import { Link } from "react-router-dom";
 
-const Login = ({emailLabel, emailPlaceholder, passwordLabel, passwordPlaceholder, submitButtonText}) => {
+const Login = ({emailLabel, emailPlaceholder, passwordLabel, passwordPlaceholder, submitButtonText, registerButtonText}) => {
 
     return(
+
         <div className="login-container">
-            <form class="row g-3 needs-validation" novalidate>
-
+            <form>
+                <h1>Login</h1>
                 <Email emailLabel={emailLabel} emailPlaceholder={emailPlaceholder}/>
-
                 <Password passwordLabel={passwordLabel} passwordPlaceholder={passwordPlaceholder}/>
-         
-                <Link className="link" to={`/Profile`}><Submitbutton submitButtonText={submitButtonText}/></Link>
-
-                <Link className="link" to={`/Register`}><Submitbutton submitButtonText="Register now" /></Link>
-
+                
+                <Link to={"/Register"}><Submitbutton submitButtonText={registerButtonText}/></Link>
+                
+                <Link to={"/Profile"}><Submitbutton submitButtonText={submitButtonText}/></Link>
+                
             </form>
-
-            
-            
         </div>
+        
     )
 
 }

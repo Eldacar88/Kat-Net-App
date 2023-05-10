@@ -1,14 +1,14 @@
-import React from "react";
+import "./input.css"
 
 
-const Input = ({name, placeholder}) => {
+const Input = ({inputTitle, inputPlaceHolder}) => {
 
 return (
-    <div className="input-group mb-3">
-    <span className="input-group-text" id="inputGroup-sizing-default">{name}</span>
-    <input type="text" className="form-control" placeholder={placeholder} aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">{inputTitle}</span>
+    <input type="text" id="inputField" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder={inputPlaceHolder}/>
   </div>
-  );
+  )
 }
 
 
