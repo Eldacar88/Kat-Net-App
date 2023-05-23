@@ -28,14 +28,14 @@ const Gesuche = ({request, setRequest}) => {
 
           const newRequest = {
             id: id,
-            title: titleRef.current.value,
-            location: locationRef.current.value,
-            period: periodRef.current.value,
-            catastrophe: catastropheRef.current.value,
-            help: helpRef.current.value,
-            telefon: telefonRef.current.value,
-            email: emailRef.current.value,
-            description: descriptionRef.current.value
+            title: formRef.current.title.value,
+            location: formRef.current.location.value,
+            period: formRef.current.period.value,
+            catastrophe: formRef.current.catastrophe.value,
+            help: formRef.current.help.value,
+            telefon: formRef.current.telefon.value,
+            email: formRef.current.email.value,
+            description: formRef.current.description.value
           }
 
           setRequest([...request, newRequest]);

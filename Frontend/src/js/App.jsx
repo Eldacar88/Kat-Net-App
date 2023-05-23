@@ -19,7 +19,7 @@ import "../scss/App.css";
 import "../scss/index.css";
 
 function App() {
-  const [offer, setOffer] = useState(["Hallo"]);
+  const [offer, setOffer] = useState([]);
   const [request, setRequest] = useState([]);
 
   return (
@@ -59,9 +59,9 @@ function App() {
             />
           }/>
           
-          <Route path="/Angebot" element={<Angebot/>}/>
+          <Route path="/Angebot" element={<Angebot offer={offer} setOffer={setOffer}/>}/>
           
-          <Route path="/Gesuch" element={<Gesuche/>}/>
+          <Route path="/Gesuch" element={<Gesuche request={request} setRequest={setRequest}/>}/>
 
           <Route path="/Profile" element={<Profile
               />}/>

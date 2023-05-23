@@ -27,17 +27,17 @@ const Angebot = ({offer, setOffer}) => {
 
           const newOffer = {
             id: id,
-            title: formRef.title.current.value,
-            location: formRef.location.current.value,
-            period: formRef.period.current.value,
-            help: helpRef.help.current.value,
-            helpspecific: formRef.helpspecific.current.value,
-            telefon: formRef.telefon.current.value,
-            email: formRef.email.current.value,
-            description: formRef.description.current.value
+            title: formRef.current.title.value,
+            location: formRef.current.location.value,
+            period: formRef.current.period.value,
+            help: formRef.current.help.value,
+            helpspecific: formRef.current.helpspecific.value,
+            telefon: formRef.current.telefon.value,
+            email: formRef.current.email.value,
+            description: formRef.current.description.value
           }
           console.log(offer);
-          setOffer(newOffer);
+          setOffer([...offer, newOffer]);
       }
 
     return (
@@ -82,7 +82,7 @@ const Angebot = ({offer, setOffer}) => {
 
           <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Telefon:</span>
-            <input ref={helpRef} name="help" inputDropdownLabel={"Hilfe:"} type="text" id="inputField"
+            <input ref={helpspecificRef} name="helpspecific" inputDropdownLabel={"Hilfe:"} type="text" id="inputField"
             class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
             placeholder={"Wobei können Sie genau helfen?"}/>
           </div>
