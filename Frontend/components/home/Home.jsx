@@ -2,7 +2,7 @@ import "./home.css"
 import Heading from "../Generic components/Heading/Heading";
 import { Link } from "react-router-dom";
 
-const Home = ({title}) => {
+const Home = () => {
     return(
         <div className="homecontainer">
             <div className="navbarcontainer">
@@ -10,9 +10,9 @@ const Home = ({title}) => {
             <div class="container-fluid">
               <div><Link id="navbaritem" class="navbar-brand" to={"/"}>Home</Link></div>
 
-              <div><Link id="navbaritem" class="navbar-brand" to={"/Gesuch"}>Neues Gesuch</Link></div>
-              
-              <div><Link id="navbaritem" class="navbar-brand" to={"/Angebot"}>Neues Angebot</Link></div>
+              <div><Link id="navbaritem" class="navbar-brand" to={"/Feedoffer"}>Neues Angebot</Link></div>
+
+              <div><Link id="navbaritem" class="navbar-brand" to={"/Feedrequest"}>Neues Gesuch</Link></div>
               
               <div><Link id="navbaritem" class="navbar-brand" to={"/Login"}>Login</Link></div>
 
@@ -26,7 +26,7 @@ const Home = ({title}) => {
           </nav>
 
         </div>
-            <Heading title={title}/>
+            
 
         </div>
         

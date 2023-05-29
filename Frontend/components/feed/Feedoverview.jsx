@@ -1,12 +1,14 @@
 import "./feedoverview.css"
 import Feedoffer from "./Feedoffer";
 import Feedrequest from "./Feedrequest";
+import Offercard from "../cards/Offercard";
+import Requestcard from "../cards/Requestcard";
 
-const Feedoverview = ({offer, setOffer, request, setRequest}) => {
+const Feedoverview = () => {
     return(
         <div className="overviewcontainer">
-            <Feedoffer offer={offer} setOffer={setOffer}/>
-            <Feedrequest request={request} setRequest={setRequest}/>
+            <Feedoffer/>
+            <Feedrequest/>
         </div>
     )
 }

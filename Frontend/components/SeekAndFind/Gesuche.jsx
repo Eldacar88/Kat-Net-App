@@ -79,7 +79,7 @@ const Gesuche = ({request, setRequest}) => {
             <option value="2">Hochwasser</option>
             <option value="3">Stromausfall</option>
           </select>
-        </div>
+          </div>
 
           <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Gesuchte Hilfe:</span>
